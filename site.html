@@ -1,337 +1,377 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Pakko-Figma</title>
-		<link href="site.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+		<link href="site.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="media.css">
 	</head>
 	<body>
-		<header id="header">
-			<div id="header_logo">
-				<a href="site.html">
-					<img src="image/svg/logo.svg" alt="Pakko" id="logo" />
-				</a>
-			</div>
-			<div id="header_menu">
-				<a href="site.html">
-					<div id="fonctionnalités_block">
-						<p id="fonctionnalités">Fonctionnalités</p>
-						<img src="image/svg/triangle.svg" alt="*" id="triangle" />
-					</div>
-					<p id="tarifs">Tarifs</p>
-					<p id="app_ios">App iOS</p>
-					<p id="me_connecter">Me connecter</p>
-					<div id="sinscrire_block">
-						<p id="sinscrire">S'inscrire</p>
-					</div>
-				</a>
+		<header>
+			<div class="wrapper">
+				<div class="header_wrapper">
+					<a href="site.html"><img src="image/svg/logo.svg" alt="Pakko" class="logo" /></a>
+					<nav class="header_text">
+						<a href="#function" class="header_link">Fonctionnalités<img src="image/svg/triangle.svg" alt="*" class="header_triangle" /></a>
+						<a href="#tarif" class="header_link">Tarifs</a>
+						<a href="#app" class="header_link">App iOS</a>
+						<a href="site.html" class="header_link_2">Me connecter</a>
+						<a href="#regir"><button class="header_button">S'inscrire</button></a>
+					</nav>
+				</div>
 			</div>
 		</header>
-		<div id="main_block">
-			<div id="intro">
-				<h1>Devis, factures, suivi, plafonds, cotisations</h1>
-				<p id="introduction">Pakko accompagne les micro-entrepreneurs et leur fait gagner du temps !</p>
-				<div id="buttons_intro">
-					<a href="site.html">
-						<div id="voir_la_vidéo_block">
-							<p id="voir_la_vidéo">Voir la vidéo</p>
-						</div>
-						<div id="créer_mon_compte_block">
-							<p id="créer_mon_compte">Créer mon compte</p>
-						</div>
-					</a>
+		<main>
+			<section class="intro">
+				<div class="wrapper">
+					<h1>Devis, factures, suivi, plafonds, cotisations</h1>
+					<p class="intro_text">Pakko accompagne les micro-entrepreneurs et leur fait gagner du temps !</p>
+					<div class="intro_button">
+						<a href="#"><button class="intro_button_1">Créer mon compte</button></a>
+						<a href="#"><button class="intro_button_2">Voir la vidéo</button></a>
+					</div>
 				</div>
-				<img id="image_1" src="image/image_1.png" />
+				<div class="intro_img">
+					<img src="image/image_1.png" alt="*" class="intro_img_1" />
+				</div>
+			</section>
+			<div class="wrapper">
+				<section class="function" id="function">
+					<div class="function_block_1_3">
+						<img src="image/image_2.png" alt="*" class="function_img_1_3" />
+						<div class="function_block_text_1_3">
+							<p class="function_name_1">Suivi et analyse</p>
+							<h2 class="function_heading_1_3">Chiffre d'affaires, cotisations, plafonds ...</h2>
+							<p class="function_text_1_3">Visualisez et comparez vos chiffres sur l'année, le trimestre ou le mois. Chiffre d'affaires, cotisations, plafonds, TVA récoltée, encaissements et ce qu'il reste dans votre poche réellement à la fin !</p>
+							<a href="#" class="function_link_1">En savoir plus</a>
+						</div>
+					</div>
+					<div class="function_block_2">
+						<img src="image/image_3.png" alt="*" class="function_img_2" />
+						<div class="function_block_text_2">
+							<p class="function_name_2">Devis et facturation</p>
+							<h2 class="function_heading_2">Générez vos factures et devis en un rien de temps</h2>
+							<p class="function_text_2">Générez des factures et des devis esthétiques. Suivez chaque étape importante : envoyé, en retard, payé… Générez des acomptes et des soldes en quelques clics seulement.</p>
+							<a href="#" class="function_link_2">En savoir plus</a>
+						</div>
+					</div>
+					<div class="function_block_1_3">
+						<img src="image/image_4.png" alt="*" class="function_img_1_3" />
+						<div class="function_block_text_1_3">
+							<p class="function_name_3">Gestion des projets et clients</p>
+							<h2 class="function_heading_1_3">Gérez facilement vos clients et projets</h2>
+							<p class="function_text_1_3">Créez rapidement vos projets et clients. Suivez les chiffres clés pour chacun. Retrouvez tous vos documents plus facilement.</p>
+							<a href="#" class="function_link_3">En savoir plus</a>
+						</div>
+					</div>
+				</section>
+				<section class="app" id="app">
+					<h2 class="app_heading">Pensé pour les micro-entrepreneurs</h2>
+					<div class="app_buttons">
+						<a href="#"><button class="app_button">
+							<figure>
+								<img src="image/Gestion de l'ACRE.png" alt="*" class="app_img" />
+								<figcaption class="app_text">Gestion de l'ACRE</figcaption>
+							</figure>
+						</button></a>
+						<a href="#"><button class="app_button">
+							<figure>
+								<img src="image/Gestion de la TVA.png" alt="*" class="app_img" />
+								<figcaption class="app_text">Gestion de la TVA</figcaption>
+							</figure>
+						</button></a>
+						<a href="#"><button class="app_button">
+							<figure>
+								<img src="image/Calcul des cotisations.png" alt="*" class="app_img" />
+								<figcaption class="app_text">Calcul des cotisations</figcaption>
+							</figure>
+						</button></a>
+						<a href="#"><button class="app_button">
+							<figure>
+								<img src="image/Prélèvement libératoire.png" alt="*" class="app_img" />
+								<figcaption class="app_text">Prélèvement libératoire</figcaption>
+							</figure>
+						</button></a>
+						<a href="#"><button class="app_button">
+							<figure>
+								<img src="image/Factures externes.png" alt="*" class="app_img" />
+								<figcaption class="app_text">Factures externes</figcaption>
+							</figure>
+						</button></a>
+						<a href="#"><button class="app_button">
+							<figure>
+								<img src="image/Plafonds CA & TVA.png" alt="*" class="app_img" />
+								<figcaption class="app_text">Plafonds CA & TVA</figcaption>
+							</figure>
+						</button></a>
+						<a href="#"><button class="app_button">
+							<figure>
+								<img src="image/Import de données.png" alt="*" class="app_img" />
+								<figcaption class="app_text">Import de données</figcaption>
+							</figure>
+						</button></a>
+						<a href="#"><button class="app_button">
+							<figure>
+								<img src="image/Et plus à venir.png" alt="*" class="app_img" />
+								<figcaption class="app_text">Et plus à venir</figcaption>
+							</figure>
+						</button></a>
+					</div>
+				</section>
+				<section class="tarif" id="tarif">
+					<h2 class="tarif_heading">Des tarifs qui s'adaptent à votre activité !</h2>
+					<div class="tarif_buttons">
+						<a href="#tarif_2"><button class="tarif_button_1">Mensuel</button></a>
+						<a href="#tarif_3"><button class="tarif_button_2">Annuel -16,5% 🎉</button></a>
+					</div>
+					<div class="tarifs">
+						<div class="tarif_1">
+							<img src="image/svg/logow.svg" alt="Pakko" class="logow">
+							<p class="tarif_text_1">Gratuit</p>
+							<div class="tarif_1_1">
+								<div class="tarif_check">
+									<img src="image/svg/check.svg" class="check_1" />
+									<p class="tarif_check_text_1">Gratuit</p>
+								</div>
+								<div class="tarif_check">
+									<img src="image/svg/check.svg" class="check_2" />
+									<p class="tarif_check_text_2">Jusqu'à 4 clients</p>
+								</div>
+								<div class="tarif_check">
+									<img src="image/svg/check.svg" class="check_2" />
+									<p class="tarif_check_text_2">Chiffre d'affaires jusqu'à 5 000€</p>
+								</div>
+							</div>
+						</div>
+						<div class="tarif_2">
+							<img src="image/svg/logow.svg" alt="Pakko" class="logow">
+							<div class="tarif_price">
+								<p class="tarif_text_2">Basique</p>
+								<div class="tarif_price_price">
+									<p class="tarif_price_1">5€</p>
+									<p class="tarif_price_2">/mois</p>
+								</div>
+							</div>
+							<div class="tarif_2_1">
+								<div class="tarif_check">
+									<img src="image/svg/check3.svg" class="check_1" />
+									<p class="tarif_check_text_1">30 jours d'essai gratuits</p>
+								</div>
+								<div class="tarif_check">
+									<img src="image/svg/check3.svg" class="check_2" />
+									<p class="tarif_check_text_2">Clients illimités</p>
+								</div>
+								<div class="tarif_check">
+									<img src="image/svg/check3.svg" class="check_2" />
+									<p class="tarif_check_text_2">Chiffre d'affaires jusqu'à 30 000€</p>
+								</div>
+							</div>
+						</div>
+						<div class="tarif_3">
+							<img src="image/svg/logow.svg" alt="Pakko" class="logow">
+							<div class="tarif_price">
+								<p class="tarif_text_3">Pro</p>
+								<div class="tarif_price_price">
+									<p class="tarif_price_1">12€</p>
+									<p class="tarif_price_2">/mois</p>
+								</div>
+							</div>
+							<div class="tarif_3_1">
+								<div class="tarif_check">
+									<img src="image/svg/check2.svg" class="check_1" />
+									<p class="tarif_check_text_1">30 jours d'essai gratuits</p>
+								</div>
+								<div class="tarif_check">
+									<img src="image/svg/check2.svg" class="check_2" />
+									<p class="tarif_check_text_2">Clients illimités</p>
+								</div>
+								<div class="tarif_check">
+									<img src="image/svg/check2.svg" class="check_2" />
+									<p class="tarif_check_text_2">Chiffre d'affaires illimité</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="comments">
+					<div class="comments_head">
+						<h2 class="comments_heading">Ils en parlent mieux que nous</h2>
+						<div class="comment_block_1">
+							<div class="comment_head">
+								<div class="comment_head_1">
+									<img src="image/svg/avatar1.svg" alt="*" class="avatar_1">
+									<div class="comment_head_name">
+										<p class="comment_name">Retour utilisateur</p>
+										<a href="site.html" class="comment_link_1">Formulaire de feedback</a>
+									</div>
+								</div>
+								<img src="image/svg/iconmessage.svg" alt="*" class="icon">
+							</div>
+							<p class="comment_text">C’est exactement ce que je cherchais.</p>
+						</div>
+					</div>
+					<div class="comment_big_blocks">
+						<div class="comment_big_block_1">
+							<div class="comment_block_2">
+								<div class="comment_head">
+									<div class="comment_head_1">
+										<img src="image/avatar5.png" alt="*" class="avatar_1">
+										<div class="comment_head_name">
+											<p class="comment_name">Antony Legrand</p>
+											<a href="site.html" class="comment_link_1">@Wisibility</a>
+										</div>
+									</div>
+									<img src="image/svg/icontwit.svg" alt="*" class="icon">
+								</div>
+								<p class="comment_text">Merci pour toutes vos réponses concernant un bon service de facturation / suivi de CA pour les Free… Je crois qu'avec @Pakko_app j'ai trouvé ce que je cherche. Simple et efficace.</p>
+								<a href="site.html" class="comment_link_2">Voir le post</a>
+							</div>
+							<div class="comment_block_3">
+								<div class="comment_head">
+									<div class="comment_head_1">
+										<img src="image/svg/avatar6.svg" alt="*" class="avatar_1">
+										<div class="comment_head_name">
+											<p class="comment_name">Retour utilisateur</p>
+											<a href="site.html" class="comment_link_1">Formulaire de feedback</a>
+										</div>
+									</div>
+									<img src="image/svg/iconmessage.svg" alt="*" class="icon">
+								</div>
+								<p class="comment_text">Un onboarding clair et vraiment bien pensé. +10 pour les liens vers le site de l’URSSAF lors de l’inscription.</p>
+							</div>
+							<div class="comment_block_4">
+								<div class="comment_head">
+									<div class="comment_head_1">
+										<img src="image/svg/avatar7.svg" alt="*" class="avatar_1">
+										<div class="comment_head_name">
+											<p class="comment_name">Retour utilisateur</p>
+											<a href="site.html" class="comment_link_1">Formulaire de feedback</a>
+										</div>
+									</div>
+									<img src="image/svg/iconmessage.svg" alt="*" class="icon">
+								</div>
+								<p class="comment_text">J’aime beaucoup voir en un clin d’oeil ce que j’ai encaissé mais surtout ce qui reste dans ma poche après les cotisations.</p>
+							</div>
+							<div class="comment_block_5">
+								<div class="comment_head">
+									<div class="comment_head_1">
+										<img src="image/avatar8.png" alt="*" class="avatar_1">
+										<div class="comment_head_name">
+											<p class="comment_name">mood</p>
+											<a href="site.html" class="comment_link_1">@maudrchl</a>
+										</div>
+									</div>
+									<img src="image/svg/icontwit.svg" alt="*" class="icon">
+								</div>
+								<p class="comment_text">Je viens de commencer à utiliser Pakko pour mes projets freelance. Je ne peux que le recommander. Le produit est très bien pensé 👏</p>
+								<a href="site.html" class="comment_link_2">Voir le post</a>
+							</div>
+						</div>
+						<div class="comment_big_block_2">
+							<div class="comment_block_6">
+								<div class="comment_head">
+									<div class="comment_head_1">
+										<img src="image/avatar2.png" alt="*" class="avatar_1">
+										<div class="comment_head_name">
+											<p class="comment_name">Matthieu Teyssandier</p>
+											<a href="site.html" class="comment_link_1">@m_teyssandier</a>
+										</div>
+									</div>
+									<img src="image/svg/icontwit.svg" alt="*" class="icon">
+								</div>
+								<p class="comment_text">@Pakko_app Best service de CA !</p>
+								<a href="site.html" class="comment_link_2">Voir le post</a>
+							</div>
+							<div class="comment_block_7">
+								<div class="comment_head">
+									<div class="comment_head_1">
+										<img src="image/svg/avatar3.svg" alt="*" class="avatar_1">
+										<div class="comment_head_name">
+											<p class="comment_name">Retour utilisateur</p>
+											<a href="site.html" class="comment_link_1">Formulaire de feedback</a>
+										</div>
+									</div>
+									<img src="image/svg/iconmessage.svg" alt="*" class="icon">
+								</div>
+								<p class="comment_text">Le service a l’air super ça faisait longtemps que je cherchais un dashboard aussi clean que le votre ! Ça donne envie de l'utiliser !</p>
+							</div>
+							<div class="comment_block_8">
+								<div class="comment_head">
+									<div class="comment_head_1">
+										<img src="image/avatar4.png" alt="*" class="avatar_1">
+										<div class="comment_head_name">
+											<p class="comment_name">Maxine Ficheux</p>
+											<a href="site.html" class="comment_link_1">@Maxine_fi</a>
+										</div>
+									</div>
+									<img src="image/svg/iconmessage.svg" alt="*" class="icon">
+								</div>
+								<p class="comment_text">Je n'utilise plus que ça ! C'est super simple, assez joli et abordable, le top quoi !</p>
+								<a href="site.html" class="comment_link_2">Voir le post</a>
+							</div>
+							<div class="comment_block_9">
+								<div class="comment_head">
+									<div class="comment_head_1">
+										<img src="image/svg/avatar1.svg" alt="*" class="avatar_1">
+										<div class="comment_head_name">
+											<p class="comment_name">Retour utilisateur</p>
+											<a href="site.html" class="comment_link_1">Formulaire de feedback</a>
+										</div>
+									</div>
+									<img src="image/svg/iconmessage.svg" alt="*" class="icon">
+								</div>
+								<p class="comment_text">Trop bien de pouvoir demandé un acompte ou le solde !!!!</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="regir" id="regir">
+					<div class="regir_block">
+						<p class="regir_text">Prêt à gagner du temps ?</p>
+						<h2 class="regir_heading">Essayez gratuitement</h2>
+						<a href="#regir"><button class="regir_button">S'inscrire</button></a>
+					</div>
+				</section>
+				<footer>
+					<div class="footer_block">
+						<div class="footer_pakko">
+							<a href="site.html"><img src="image/svg/logo.svg" alt="Pakko" class="logo_2"></a>
+							<p class="footer_pakko_text_1">Gagnez du temps,</p>
+							<p class="footer_pakko_text_2">faites ce que vous aimez !</p>
+							<a href="#"><img src="image/svg/facebook.svg" alt="*" class="social"></a>
+							<a href="#"><img src="image/svg/instagram.svg" alt="*" class="social"></a>
+							<a href="#"><img src="image/svg/ins.svg" alt="*" class="social"></a>
+						</div>
+						<div class="footer_func">
+							<p class="footer_text_head"><b>Fonctionnalités</b></p>
+							<a href="#" class="footer_text">Suivi et analyse de l'activité</a>
+							<a href="#" class="footer_text">Devis & facturation</a>
+							<a href="#" class="footer_text">Gestion des projets et clients</a>
+						</div>
+						<div class="footer_propos">
+							<p class="footer_text_head"><b>À propos</b></p>
+							<a href="#" class="footer_text">Tarifs</a>
+							<a href="#" class="footer_text">Centre d'aide</a>
+							<a href="#" class="footer_text">CGV</a>
+							<a href="#" class="footer_text">Politique de confidentialité</a>
+						</div>
+						<div class="footer_res">
+							<p class="footer_text_head"><b>Ressources</b></p>
+							<a href="#" class="footer_text">Deals</a>
+							<a href="#" class="footer_text">Outils</a>
+							<a href="#" class="footer_text">Blog</a>
+							<a href="#" class="footer_text">Simulateur TJM</a>
+						</div>
+					</div>
+					<div class="footer_down">
+						<p class="footer_down_1">© 2019-2020 Pakko est un produit de</p>
+						<p class="footer_down_1">Reveal Studio</p>
+						<p class="footer_down_1">Tous droits réservés</p>
+					</div>
+				</footer>
 			</div>
-			<div id="content">
-				<img id="image_2" src="image/image_2.png" />
-				<img id="image_3" src="image/image_3.png" />
-				<img id="image_4" src="image/image_4.png" />
-				<div id="text_1_block">
-					<h2 id="heading_1">Chiffre d'affaires, cotisations, plafonds ...</h2>
-					<p id="suivi_et_analyse">Suivi et analyse</p>
-					<p id="text_1">Visualisez et comparez vos chiffres sur l'année, le trimestre ou le mois. Chiffre d'affaires, cotisations, plafonds, TVA récoltée, encaissements et ce qu'il reste dans votre poche réellement à la fin !</p>
-					<a id="link_1" href="site.html">En savoir plus</a>
-				</div>
-				<div id="text_2_block">
-					<h2 id="heading_2">Générez vos factures et devis en un rien de temps</h2>
-					<p id="devis_et_facturation">Devis et facturation</p>
-					<p id="text_2">Générez des factures et des devis esthétiques. Suivez chaque étape importante : envoyé, en retard, payé… Générez des acomptes et des soldes en quelques clics seulement.</p>
-					<a id="link_2" href="site.html">En savoir plus</a>
-				</div>
-				<div id="text_3_block">
-					<h2 id="heading_3">Gérez facilement vos clients et projets</h2>
-					<p id="gestion_des_projets_et_clients">Gestion des projets et clients</p>
-					<p id="text_3">Créez rapidement vos projets et clients. Suivez les chiffres clés pour chacun. Retrouvez tous vos documents plus facilement.</p>
-					<a id="link_3" href="site.html">En savoir plus</a>
-				</div>
-			</div>
-			<div id="buttons">
-				<h2 id="buttons_heading_1">Pensé pour les</h2>
-				<h2 id="buttons_heading_2">micro-entrepreneurs</h2>
-				<div id="buttons_block">
-					<a href="site.html">
-						<div id="gestion_de_iacre_block">
-							<img id="gestion_de_iacre_im" src="image/Gestion de l'ACRE.png" />
-							<p id="gestion_de_iacre">Gestion de l'ACRE</p>
-						</div>
-						<div id="factures_externes_block">
-							<img id="factures_externes_im" src="image/Factures externes.png" />
-							<p id="factures_externes">Factures externes</p>
-						</div>
-						<div id="import_de_donnees_block">
-							<img id="import_de_donnees_im" src="image/Import de données.png" />
-							<p id="import_de_donnees">Import de données</p>
-						</div>
-						<div id="calcul_des_cotisation_block">
-							<img id="calcul_des_cotisation_im" src="image/Calcul des cotisations.png" />
-							<p id="calcul_des_cotisation">Calcul des cotisations</p>
-						</div>
-						<div id="et_plus_a_venir_block">
-							<img id="et_plus_a_venir_im" src="image/Et plus à venir.png" />
-							<p id="et_plus_a_venir">Et plus à venir ...</p>
-						</div>
-						<div id="plafonds_block">
-							<img id="plafonds_im" src="image/Plafonds CA & TVA.png" />
-							<p id="plafonds">Plafonds CA & TVA</p>
-						</div>
-						<div id="prelevement_liberatoire_block">
-							<img id="prelevement_liberatoire_im" src="image/Prélèvement libératoire.png" />
-							<p id="prelevement_liberatoire">Prélèvement libératoire</p>
-						</div>
-						<div id="gestion_de_la_tva_block">
-							<img id="gestion_de_la_tva_im" src="image/Gestion de la TVA.png" />
-							<p id="gestion_de_la_tva">Gestion de la TVA</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div id="rates">
-				<h2 id="rates_heading_1">Des tarifs qui s'adaptent</h2>
-				<h2 id="rates_heading_2">à votre activité !</h2>
-				<a href="site.html">
-					<div id="mensuel_block">
-						<p id="mensuel">Mensuel</p>
-					</div>
-					<div id="annuel_block">
-						<p id="annuel">Annuel -16,5% 🎉</p>
-					</div>
-				</a>
-				<a href="site.html">
-					<div id="gratuit_block">
-						<img src="image/svg/gratuitim.svg" alt="*" id="gratuitim" />
-						<img src="image/svg/logow.svg" alt="Pakko" id="logow" />
-						<p id="gratuit_intro">Gratuit</p>
-						<div id="chiffre_block">
-							<p id="chiffre">Chiffre d'affaires jusqu'à 5 000€</p>
-							<img src="image/svg/check.svg" alt="*" id="check" />
-						</div>
-						<div id="jusqu_block">
-							<p id="jusqu">Jusqu'à 4 clients</p>
-							<img src="image/svg/check.svg" alt="*" id="check" />
-						</div>
-						<div id="gratuit_text_block">
-							<p id="gratuit">Gratuit</p>
-							<img src="image/svg/check.svg" alt="*" id="check" />
-						</div>
-					</div>
-					<div id="basique_block">
-						<img src="image/svg/basiqueim.svg" alt="*" id="gratuitim" />
-						<img src="image/svg/logow.svg" alt="Pakko" id="logow" />
-						<p id="basique_intro">Basique</p>
-						<p id="price">5€</p>
-						<p id="mois">/mois</p>
-						<div id="chiffre_block">
-							<p id="chiffre">Chiffre d'affaires jusqu'à 30 000€</p>
-							<img src="image/svg/check3.svg" alt="*" id="check" />
-						</div>
-						<div id="jusqu_block">
-							<p id="jusqu">Clients illimités</p>
-							<img src="image/svg/check3.svg" alt="*" id="check" />
-						</div>
-						<div id="gratuit_text_block">
-							<p id="jours">30 jours d'essai gratuits</p>
-							<img src="image/svg/check3.svg" alt="*" id="check" />
-						</div>
-					</div>
-					<div id="pro_block">
-						<img src="image/svg/proim.svg" alt="*" id="gratuitim" />
-						<img src="image/svg/logow.svg" alt="Pakko" id="logow" />
-						<p id="pro_intro">Pro</p>
-						<p id="price2">12€</p>
-						<p id="mois">/mois</p>
-						<div id="chiffre_block">
-							<p id="chiffre">Chiffre d'affaires illimité</p>
-							<img src="image/svg/check2.svg" alt="*" id="check" />
-						</div>
-						<div id="jusqu_block">
-							<p id="jusqu">Clients illimités</p>
-							<img src="image/svg/check2.svg" alt="*" id="check" />
-						</div>
-						<div id="gratuit_text_block">
-							<p id="jours">30 jours d'essai gratuits</p>
-							<img src="image/svg/check2.svg" alt="*" id="check" />
-						</div>
-					</div>
-				</a>
-			</div>
-			<div id="comments">
-				<h2 id="comments_heading_1">Ils en parlent</h2>
-				<h2 id="comments_heading_2">mieux que nous</h2>
-				<div id="comment_retour_1">
-					<p id="name">Retour utilisateur</p>
-					<a href="site.html">
-						<p id="name_link">Formulaire de feedback</p>
-					</a>
-					<p id="comment_text_1">C’est exactement ce que je cherchais.</p>
-					<img src="image/svg/avatar1.svg" alt="*" id="avatar" />
-					<img src="image/svg/iconmessage.svg" alt="*" id="icon" />
-				</div>
-				<div id="right_comments">
-					<div id="comment_matthieu">
-						<p id="name">Matthieu Teyssandier</p>
-						<a href="site.html">
-							<p id="comment_text_1">@Pakko_app Best service de CA !</p>
-							<p id="name_link">@m_teyssandier</p>
-						</a>
-						<img src="image/avatar2.png" alt="*" id="avatar" />
-						<img src="image/svg/icontwit.svg" alt="*" id="icon" />
-						<a href="site.html">
-							<p id="message_link">Voir le post</p>
-						</a>
-					</div>
-					<div id="comment_retour_2">
-						<p id="name">Retour utilisateur</p>
-						<a href="site.html">
-							<p id="name_link">Formulaire de feedback</p>
-						</a>
-						<p id="comment_text_2">Le service a l’air super ça faisait longtemps que je cherchais un dashboard aussi clean que le votre ! Ça donne envie de l'utiliser !</p>
-						<img src="image/svg/avatar3.svg" alt="*" id="avatar" />
-						<img src="image/svg/iconmessage.svg" alt="*" id="icon" />
-					</div>
-					<div id="comment_maxine">
-						<p id="name">Maxine Ficheux</p>
-						<p id="comment_text_3">Je n'utilise plus que ça ! C'est super simple, assez joli et abordable, le top quoi !</p>
-						<a href="site.html">
-							<p id="name_link">@Maxine_fi</p>
-						</a>
-						<img src="image/avatar4.png" alt="*" id="avatar" />
-						<img src="image/svg/iconmessage.svg" alt="*" id="icon" />
-						<a href="site.html">
-							<p id="message_link_2">Voir le post</p>
-						</a>
-					</div>
-					<div id="comment_retour_3">
-						<p id="name">Retour utilisateur</p>
-						<a href="site.html">
-							<p id="name_link">Formulaire de feedback</p>
-						</a>
-						<p id="comment_text_4">Trop bien de pouvoir demandé un acompte ou le solde !!!!</p>
-						<img src="image/svg/avatar1.svg" alt="*" id="avatar" />
-						<img src="image/svg/iconmessage.svg" alt="*" id="icon" />
-					</div>
-				</div>
-				<div id="left_comments">
-					<div id="comment_antony">
-						<p id="name">Antony Legrand</p>
-						<p id="comment_text_5">Merci pour toutes vos réponses concernant un bon service de facturation / suivi de CA pour les Free… Je crois qu'avec @Pakko_app j'ai trouvé ce que je cherche. Simple et efficace.</p>
-						<a href="site.html">
-							<p id="name_link">@Wisibility</p>
-						</a>
-						<img src="image/avatar5.png" alt="*" id="avatar" />
-						<img src="image/svg/icontwit.svg" alt="*" id="icon" />
-						<a href="site.html">
-							<p id="message_link_3">Voir le post</p>
-						</a>
-					</div>
-					<div id="comment_retour_4">
-						<p id="name">Retour utilisateur</p>
-						<a href="site.html">
-							<p id="name_link">Formulaire de feedback</p>
-						</a>
-						<p id="comment_text_2">Un onboarding clair et vraiment bien pensé. +10 pour les liens vers le site de l’URSSAF lors de l’inscription.</p>
-						<img src="image/svg/avatar6.svg" alt="*" id="avatar" />
-						<img src="image/svg/iconmessage.svg" alt="*" id="icon" />
-					</div>
-					<div id="comment_retour_5">
-						<p id="name">Retour utilisateur</p>
-						<a href="site.html">
-							<p id="name_link">Formulaire de feedback</p>
-						</a>
-						<p id="comment_text_6">J’aime beaucoup voir en un clin d’oeil ce que j’ai encaissé mais surtout ce qui reste dans ma poche après les cotisations.</p>
-						<img src="image/svg/avatar7.svg" alt="*" id="avatar" />
-						<img src="image/svg/iconmessage.svg" alt="*" id="icon" />
-					</div>
-					<div id="comment_mood">
-						<p id="name">mood</p>
-						<p id="comment_text_5">Je viens de commencer à utiliser Pakko pour mes projets freelance. Je ne peux que le recommander. Le produit est très bien pensé 👏</p>
-						<a href="site.html">
-							<p id="name_link">@maudrchl</p>
-						</a>
-						<img src="image/avatar8.png" alt="*" id="avatar" />
-						<img src="image/svg/icontwit.svg" alt="*" id="icon" />
-						<a href="site.html">
-							<p id="message_link_3">Voir le post</p>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div id="subscription">
-				<img src="image/svg/mask1.svg" alt="*" id="mask_1" />
-				<h2 id="subscription_heading">Essayez gratuitement</h2>
-				<p id="subscription_text">Prêt à gagner du temps ?</p>
-				<a href="site.html">
-					<div id="subscription_button">
-						<p id="subscription_sinscrire">S'inscrire</p>
-					</div>
-				</a>
-			</div>
-			<div id="bottom_menu">
-				<div id="ressources_block">
-					<a href="site.html">
-						<p id="ressources">Ressources</p>
-						<p id="deals">Deals</p>
-						<p id="outils">Outils</p>
-						<p id="blog">Blog</p>
-						<p id="simulateur_tjm">Simulateur TJM</p>
-					</a>
-				</div>
-				<div id="apropos_block">
-					<a href="site.html">
-						<p id="apropos">À propos</p>
-						<p id="tarifs_2">Tarifs</p>
-						<p id="centre_daide">Centre d'aide</p>
-						<p id="cgv">CGV</p>
-						<p id="politique_de_confidentialité">Politique de confidentialité</p>
-					</a>
-				</div>
-				<div id="fonctionnalités_block_2">
-					<a href="site.html">
-						<p id="fonctionnalités_2">Fonctionnalités</p>
-						<p id="suivi_et_analyse_2">Suivi et analyse de l'activité</p>
-						<p id="devis_facturation">Devis & facturation</p>
-						<p id="gestion_des_projets">Gestion des projets et clients</p>
-					</a>
-				</div>
-				<div id="pakko_block">
-					<a href="site.html">
-						<img src="image/svg/logo.svg" alt="Pakko" id="bottom_logo" />
-					</a>
-					<p id="gagnez_du_temps">Gagnez du temps,</p>
-					<p id="faites_ce_que">faites ce que vous aimez !</p>
-					<div id="social">
-						<a href="site.html">
-							<img src="image/svg/facebook.svg" alt="*" id="facebook" />
-							<img src="image/svg/instagram.svg" alt="*" id="instagram" />
-							<img src="image/svg/ins.svg" alt="*" id="ins" />
-						</a>
-					</div>
-				</div>
-				<p id="yers">© 2019-2020 Pakko est un produit de</p>
-				<p id="studio">Reveal Studio</p>
-				<p id="tous">Tous droits réservés</p>
-			</div>
-		</div>
+		</main>
 	</body>
 </html>
